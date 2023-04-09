@@ -18,7 +18,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check-out repository
         uses: actions/checkout@v2
-        
+        with:
+          token: ${{ secrets.Pat}}
       # Runs a single command using the runners shell
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
