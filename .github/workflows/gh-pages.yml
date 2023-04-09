@@ -33,7 +33,7 @@ jobs:
         
       # Push to Github Pages
       - name: Github Pages
-        uses: simplefolio/ghaction-github-pages@v2.1.3
+        uses: actions/ghaction-github-pages@v2.1.3
         with:
           # Build directory to deploy
           target_branch: gh-pages
